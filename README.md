@@ -4,7 +4,7 @@ Stay prepared for any weather with our Weather App! Get real-time weather update
 
 ## Deployed Link
 
-[Link](https://weather-app-chi-steel.vercel.app/weather)
+[Link](https://weather-app-gamma-snowy.vercel.app/)
 
 ## Technologies
 
@@ -15,6 +15,7 @@ The project uses the following technologies and frameworks:
 - Javascript
 - React.js
 - TailwindCSS
+- React router
 
 ## Installation
 
