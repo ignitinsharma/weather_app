@@ -13,6 +13,11 @@ const WeatherInput = () => {
   };
 
   const handleSearch = () => {
+    if (cityInput.trim() === "") {
+      alert("City name cannot be empty.");
+      return;
+    }
+
     setCity(cityInput);
     navigate("/weather");
   };
@@ -53,7 +58,7 @@ const WeatherInput = () => {
 
   return (
     <div className="h-screen w-full bg-[#43AEFC] flex justify-center items-center">
-      <div className="bg-white p-6 rounded shadow-lg flex flex-col w-[30%] ">
+      <div className="bg-white p-6 rounded shadow-lg flex flex-col w-[80%] md:w-[30%] ">
         <h1 className="text-[1.4rem] font-bold text-[#43AEFC]">Weather App</h1>
         <input
           type="text"

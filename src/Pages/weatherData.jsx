@@ -43,7 +43,7 @@ const WeatherData = () => {
   }
   return (
     <div className="h-screen w-full bg-[#43AEFC] flex justify-center items-center">
-      <div className="bg-white p-6 rounded shadow-lg w-[30%]">
+      <div className="bg-white p-6 rounded shadow-lg w-[80%] md:w-[30%]">
         <Link to={"/"} className="flex items-center">
           <AiOutlineArrowLeft className="mr-[5px] text-[#43AEFC]" />
           <h1 className="text-[1.1rem] border-[grey] font-semibold text-[#43AEFC]">
