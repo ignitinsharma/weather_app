@@ -1,5 +1,7 @@
 # Weather App - HootBoard
 
+Stay prepared for any weather with our Weather App! Get real-time weather updates for any city worldwide or simply click a button to fetch the weather at your current location. With a clean and intuitive interface, you can easily plan your day ahead with accurate weather forecasts
+
 ## Deployed Link
 
 [Link](https://weather-app-chi-steel.vercel.app/weather)
@@ -38,8 +40,8 @@ Provide instructions on how to install and set up your project locally. Include 
 
 - Home Page \*
 
-![Screenshot 1](<./redmeImages/img-1.png)
+![Screenshot 1](/redmeImages/img1.png)
 
 - Weather Page \*
 
-![Screenshot 2](<./redmeImages/img-2.png)
+![Screenshot 2](./redmeImages/img2.png)
