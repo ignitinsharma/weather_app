@@ -83,7 +83,7 @@ const WeatherInput = () => {
           className="p-[0.6rem] font-semibold text-white rounded bg-[#43AEFC] mt-[12px]"
           onClick={handleGetCurrentLocation}
         >
-          Get Current Location
+          Get Device Location
         </button>
       </div>
     </div>
