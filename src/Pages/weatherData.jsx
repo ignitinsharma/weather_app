@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import { FaTemperatureHigh } from "react-icons/fa";
 import { BsDropletHalf } from "react-icons/bs";
+import { SlLocationPin } from "react-icons/sl";
 import cloudPng from "../assets/cloudPng.png";
 
 const WeatherData = () => {
@@ -55,15 +56,25 @@ const WeatherData = () => {
           src={cloudPng}
           alt=""
         />
-        <h1 className="text-[2rem] font-bold text-center my-[10px] ">
-          {weatherData.main.temp} °C
+        <h1 className="text-[3rem] font-bold text-center my-[10px] ">
+          {Math.floor(weatherData.main.temp)}°C
         </h1>
         <p className="text-lg font-semibold text-center">
           {weatherData.weather[0].main}
         </p>
-        <p className="text-lg font-semibold mt-[5px] text-center">
-          {weatherData.name}, {weatherData.sys.country}
-        </p>
+        <div className="flex items-center justify-center  mt-[5px]">
+          <SlLocationPin
+            style={{
+              color: "grey",
+              width: "20px",
+              height: "15px",
+              marginRight: "5px",
+            }}
+          />
+          <p className="text-lg font-semibold text-center">
+            {weatherData.name}, {weatherData.sys.country}
+          </p>
+        </div>
         <div className="flex justify-evenly border-t-[1px] border-[grey] mt-[20px] ">
           <div className="flex pt-[6px] items-center">
             <FaTemperatureHigh
@@ -75,10 +86,13 @@ const WeatherData = () => {
               }}
             />
             <div>
-              <p className="font-bold">{weatherData.main.feels_like}</p>
+              <p className="font-bold">
+                {Math.floor(weatherData.main.feels_like)}°C
+              </p>
               <p className="text-[10px]">Feels like</p>
             </div>
           </div>
+          <div className="border-1 border"></div>
           <div className="flex pt-[6px] items-center">
             <BsDropletHalf
               style={{
@@ -89,7 +103,7 @@ const WeatherData = () => {
               }}
             />
             <div>
-              <p className="font-bold">{weatherData.main.humidity}</p>
+              <p className="font-bold">{weatherData.main.humidity}%</p>
               <p className="text-[10px]">Humidity</p>
             </div>
           </div>

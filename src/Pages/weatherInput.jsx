@@ -59,25 +59,23 @@ const WeatherInput = () => {
   return (
     <div className="h-screen w-full bg-[#43AEFC] flex justify-center items-center">
       <div className="bg-white p-6 rounded shadow-lg flex flex-col w-[80%] md:w-[30%] ">
-        <h1 className="text-[1.4rem] font-bold text-[#43AEFC]">Weather App</h1>
+        <h1 className="text-[1.4rem] font-semibold text-[#43AEFC]">
+          weather App
+        </h1>
+
         <input
           type="text"
           value={cityInput}
           onChange={handleInputChange}
           onKeyPress={handleInputKeyPress}
           placeholder="Enter city name"
-          className="p-[0.8rem] my-2"
+          className="p-[0.8rem] my-3 mt-5 border-[1px] border-[grey] text-center"
         />
-        <button
-          className="p-[0.6rem] font-semibold text-white rounded bg-[#43AEFC] my-[12px]"
-          onClick={handleSearch}
-        >
-          Search
-        </button>
+
         <div class="flex items-center">
-          <hr class="flex-1 border-1 border-black" />
-          <p class="mx-4">or</p>
-          <hr class="flex-1 border-1 border-black" />
+          <hr class="flex-1 border-1 border-[grey]" />
+          <p class="mx-4 text-[grey]">or</p>
+          <hr class="flex-1 border-1 border-[grey]" />
         </div>
         <button
           className="p-[0.6rem] font-semibold text-white rounded bg-[#43AEFC] mt-[12px]"
