@@ -1,4 +1,4 @@
-# Weather App - HootBoard
+# Weather App
 
 Stay prepared for any weather with our Weather App! Get real-time weather updates for any city worldwide or simply click a button to fetch the weather at your current location. With a clean and intuitive interface, you can easily plan your day ahead with accurate weather forecasts
 
